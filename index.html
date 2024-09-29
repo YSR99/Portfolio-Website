@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUVRAJ RANA - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(18, 18, 38);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(152, 152, 255);
+            font-size: 1.04rem;
+        }
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+        }
+        .LeftSection {
+            font-size: 3.5rem;
+        }
+        .RightSection img {
+            width: 100%;
+            margin: 50px 0;
+        }
+        .purple {
+            color: rgb(164, 75, 247);
+        }
+        #element {
+            color: rgb(155, 155, 255);
+        }
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            width: 90%;
+            margin: 25px auto;
+        }
+        .text-grey {
+            color: gray;
+        }
+        .secondsection .content {
+            display: flex;  /* Use Flexbox for layout */
+            align-items: center;  /* Center items vertically */
+        }
+        .secondsection .LeftSection {
+            font-weight: normal;
+            font-size: 1rem;
+            width: 70%;  /* Adjust width for text */
+            padding-left: 20px;  /* Adds space between text and image */
+            margin-right: 20px;  /* Adds space between left and right sections */
+        }
+        .secondsection .RightSection {
+            width: 20%;  /* Set width for the image section */
+        }
+        .secondsection .RightSection img {
+            width: 100%;  /* Image will take full width of the section */
+            height: 300px;  /* Keeps the aspect ratio intact */
+            border-radius: 10px;  /* Optional: for rounded corners */
+            object-fit: cover;  /* Ensures image fits neatly */
+        }
+        .secondsection h1 {
+            font-size: 2rem;
+        }
+
+
+
+
+
+
+        .thirdsection h1 {
+    font-size: 2rem;
+}
+
+.thirdsection {
+    max-width: 80vw;
+    margin: auto;
+    height: auto; /* Changed to auto for better content fitting */
+}
+
+.thirdsection .box {
+    background-color:  #9c97f1;
+    width: 80vw;
+    height: auto; /* Adjusted height to auto for better content fitting */
+    margin: 80px 0;
+    display: flex;
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Wrap items to the next line */
+    gap: 20px; /* Add a gap between the vertical sections */
+}
+
+.thirdsection .vertical {
+    height: auto; /* Adjust height to auto for content fitting */
+    background-color: rgb(48, 0, 94);
+    ;
+    width: 25%; /* Adjusted width for better responsiveness */
+    margin: 0; /* Removed margin as we added gap */
+    text-align: center; /* Center align text */
+    padding: 10px; /* Add padding */
+    border-radius: 10px; /* Optional: rounded corners */
+    transition: transform 0.3s ease; /* Add transition for animation */
+}
+
+.thirdsection .vertical:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.image-top {
+    width: 200px;
+    height: auto; /* Keep aspect ratio */
+    margin-bottom: 10px; /* Add space below the image */
+}
+
+.vertical-title {
+    margin-bottom: 10px; /* Add space below the title */
+    font-weight: bold; /* Make the title bold */
+}
+
+.Skills {
+    color: gray;
+    width: 100%; /* Full width */
+    font-size: 10px;
+}
+
+
+
+/* Fourth Section Styles */
+.fourthsection {
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px; /* Add some padding for better spacing */
+}
+
+.fourthsection h1 {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.fourthsection .skills-container {
+    display: flex;
+    justify-content: space-around; /* Space boxes evenly */
+    flex-wrap: wrap; /* Wrap boxes to the next line */
+}
+
+.fourthsection .skills-box {
+    background-color: rgb(48, 0, 94);
+
+    width: 25%; /* Adjusted width for better responsiveness */
+    margin: 20px; /* Space between boxes */
+    padding: 20px; /* Inner padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation effects */
+}
+
+.fourthsection .skills-box:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deepen shadow on hover */
+}
+
+.fourthsection .skills-box h2 {
+    text-align: center; /* Center align title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.fourthsection .skills-box ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.fourthsection .skills-box ul li {
+    padding: 5px 0; /* Space between list items */
+    text-align: center; /* Center align list items */
+}
+/* Fourth Section */
+
+
+/* Fourth Section */
+
+
+/* Academic Knowledge Box */
+.fourthsection .academic-knowledge {
+    background-color: rgb(249, 157, 235);
+    background-color: rgb(48, 0, 94);
+     /* White background */
+    width: 80%; /* Center width */
+    margin: 30px auto; /* Center the box */
+    padding: 20px; /* Padding inside the box */
+    text-align: center; /* Center the text */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Hover Effect similar to Skills Section */
+.fourthsection .academic-knowledge:hover {
+    transform: translateY(-10px); /* Lift up the box slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+}
+
+.fourthsection .academic-knowledge h2 {
+    font-size: 1.8rem; /* Font size for the title */
+    margin-bottom: 10px;
+    color: lavender; /* Dark text color */
+}
+
+.fourthsection .academic-knowledge p {
+    font-size: 1rem; /* Font size for the description */
+    margin-bottom: 15px;
+    color: lavender; /* Light grey color */
+}
+
+.fourthsection .academic-knowledge ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+.fourthsection .academic-knowledge ul li {
+    font-size: 1.1rem; /* Adjusted font size for the list items */
+    margin: 8px 0; /* Space between list items */
+    color: lavender; /* Default text color */
+    transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+/* List items hover effect */
+.fourthsection .academic-knowledge ul li:hover {
+    color: #ff6347; /* Change to tomato red color on hover */
+}
+
+.fifthsection {
+    max-width: 80vw;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.fifthsection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.hobbies-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hobby {
+    width: 200px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    background-color: rgb(48, 0, 94); 
+
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.hobby:hover {
+    transform: translateY(-10px);
+    background-color: rgb(36, 0, 38);   /* Light blue on hover */
+}
+
+.hobby-icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.hobby-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fffbfb;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .hobbies-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hobby {
+        width: 80%;
+    }
+}
+.contact-section {
+    max-width: 80vw;
+    margin: auto;
+    padding: 50px 0;
+    text-align: center;
+    background-color: rgb(48, 0, 94); /* Updated background color */
+    animation: fadeIn 1s ease-in-out; /* Unique animation */
+}
+
+.contact-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:  rgb(48, 0, 94);; /* Change text color to white for better contrast */
+}
+
+.contact-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-info, .contact-form {
+    background-color:  rgb(27, 0, 52);; /* Keep the inner boxes light for contrast */
+    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.contact-info ul, .contact-form form {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+/* Unique Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ 
+footer {
+    background-color: #1a1a1a; /* Dark gray color for the footer */
+    color: white; /* White text color */
+    padding: 0px; /* Padding around the footer */
+    text-align: center; /* Center text alignment */
+}
+
+.footer-content nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0px; /* Remove padding */
+}
+
+.footer-content nav ul li {
+    display: inline; /* Display list items inline */
+    margin: 0px; /* Margin between items */
+    background-color: rgb(38, 37, 37);
+}
+
+.footer-content a {
+    color: white; /* Set link color to white */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Additional styling for the footer links */
+nav a {
+    color: white; /* Ensure navigation link color is white */
+}
+
+nav a:hover {
+    color: lightgray; /* Change link color on hover */
+}
+
+.LeftSection .btn {
+    padding : 30px;
+    background : #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius : 6px;
+    font-size : 60px;
+    cursor  : pointer;
+    
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Yuvraj's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Skills</a></li>
+
+                    <li><a href="/">Hobbies</a></li>
+
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="LeftSection">
+                Hi, My name is <span class="purple">Yuvraj Rana</span>
+                <div>and I am</div>
+                <span id="element"></span>
+                </div>
+
+                <div class="buttons">
+                    <button class = "btn" > Resume
+                    </button>
+                
+            </div>
+            <div class="RightSection">
+                <img src="bg.png">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-grey">A little About me</span>
+            <h1>About</h1>
+            <div class="content">
+                <div class="RightSection">
+                    <img src="my.jpeg"> <!-- Moved photo to the left -->
+                </div>
+                <div class="LeftSection">
+                    <h2 id="aboutMe"></h2>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="thirdsection">
+            <span class="text-grey">What have I done so far:</span>
+            <h1>Projects</h1>
+            <div class="box">
+                <div class="vertical"> 
+                    <img class="image-top" src="mlp.png" alt="">
+                    <div class="vertical-title">
+                        <u>CINESUGGEST</u>
+                    </div>
+                    <div class="Skills">
+                        <h3>Skills:</h3>
+                        <ul>
+                            <li>Supervised Learning</li>
+                            <li>Collaborative Filtering</li>
+                            <li>Data Visualization</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="vertical"> 
+                    <img class="image-top" src="NLP.png" alt="">
+                    <div class="vertical-title">
+                        <u>CHATSAGE</u>
+                    </div>
+                    <div class="Skills">
+                        <h3>Skills:</h3>
+                        <ul>
+                            <li>Exploratory Data Analysis (EDA)</li>
+                            <li>Natural Language Processing</li>
+                            <li>Dialogue Formulation</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="vertical"> 
+                    <img class="image-top" src="portfolio.png" alt="">
+                    <div class="vertical-title">
+                        <u>PORTFOLIO</u>
+                    </div>
+                    <div class="Skills">
+                        <h3>Skills:</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Deployment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <span class="text-grey">working hard to add more...</span>
+        </section>
+        
+        <hr>
+        <section class="fourthsection">
+            <span class="text-grey">My Skills:</span>
+            <h1>Skills Overview</h1>
+            <div class="skills-container">
+                <div class="skills-box basic">
+                    <h2>Basic Skills</h2>
+                    <ul>
+                        <li>Docker</li>
+                        <li>Git</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <div class="skills-box intermediate">
+                    <h2>Intermediate Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>DSA</li>
+                        <li>Git/Github</li>
+                    </ul>
+                </div>
+                <div class="skills-box advanced">
+                    <h2>Advanced Skills</h2>
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>Programming Languages: C, C++, Python</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+            </div>
+            <section class="fourthsection">
+                <div class="academic-knowledge">
+                    <h2>Academic Knowledge</h2>
+                    <p>I also have academic knowledge of:</p>
+                    <ul>
+                        <li>DBMS</li>
+                        <li>Operating Systems</li>
+                        <li>Computer Organization and Architecture</li>
+                        <li>Data Science</li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+            <section class="fifthsection">
+                <span class="text-grey">What I Enjoy:</span>
+                <h1>Hobbies & Interests</h1>
+                <div class="hobbies-container">
+                    <div class="hobby">
+                        <img class="hobby-icon" src="images-3.jpeg" alt="Reading Fiction">
+                        <div class="hobby-title">Reading Fiction</div>
+                    </div>
+                    <div class="hobby">
+                        <img class="hobby-icon" src="images-5.jpeg" alt="Writing Couplets">
+                        <div class="hobby-title">Reciting Couplets</div>
+                    </div>
+                    <div class="hobby">
+                        <img class="hobby-icon" src="Artist19-600x920.jpg" alt="Music (Qawwali Enthusiast)">
+                        <div class="hobby-title">Music (Qawwali Enthusiast)</div>
+                    </div>
+                    <div class="hobby">
+                        <img class="hobby-icon" src="images-4.jpeg" alt="Neo-Noir Films">
+                        <div class="hobby-title">Neo-Noir Films</div>
+                    </div>
+                </div>
+            </section>
+        
+
+            <hr>
+            <section class="contact-section" id="contact">
+                <span class="text-grey">Get in touch:</span>
+                <h1>Contact Me</h1>
+                
+                <div class="contact-box">
+                    <div class="contact-info">
+                        <h3>Contact Information:</h3>
+                        <ul>
+                            <li>Email: yuvrjofficial@gmail.com</li>
+                            <li>Phone: +91 7206222687</li>
+                            <li>Location: Karnal, India</li>
+                        </ul>
+                    </div>
+            
+                    <div class="contact-form">
+                        <h2>Contact Me</h2>
+                        <form action="send_message.php" method="POST">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+            
+                <div class="social-links">
+                    <h3>Find me on:</h3>
+                    <ul>
+                        <li><a href=" www.linkedin.com/in/yuvraj-rana-01ba9824b">LinkedIn</a></li>
+                        <li><a href="https://github.com/YSR99">GitHub</a></li>
+                    </ul>
+                </div>
+            </section>
+            
+
+
+
+
+
+<hr>
+
+            <footer>
+                <div class="footer-content">
+                    <p>© 2024 YUVRAJ RANA. All rights reserved.</p>
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home  ||  </a></li>
+                            <li><a href="#about">About  ||  </a></li>
+                            <li><a href="#projects">Projects  ||  </a></li>
+                            <li><a href="#skills">Skills  ||  </a></li>
+                            <li><a href="#contact">Contact||</a></li>
+                        </ul>
+                    </nav>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>
+                        <a href="https://github.com/yourprofile">GitHub</a>
+                    </div>
+                    <p>"The show must go on."</p>
+                </div>
+            </footer>
+            
+
+
+
+
+
+
+
+
+            
+       
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['a Web Developer', 'a UI-UX designer', 'a Machine Learning Developer', 'a Deep Learning Developer', 'and at last', 'always a learner :) .'],
+            typeSpeed: 10, // Increase typing speed (lower number means faster typing)
+        });
+    </script>
+    <script>
+        var typed = new Typed('#aboutMe', {
+            strings: [
+                "I am a software developer from Karnal, Haryana, with a strong foundation in programming languages and a passion for training models. My goal is to continuously enhance my skills by mastering cutting-edge technologies, contributing to impactful projects, and collaborating with diverse teams to create innovative, efficient, and scalable solutions that meet user needs and business objectives. Outside of work, I have a deep interest in exploring history and learning about historical events and cultures."
+            ],
+            typeSpeed: 0,  // Increase typing speed for "About Me"
+            backSpeed: 0,  // No speed for deleting
+            loop: false, // Change to true if you want it to loop after finishing
+            showCursor: false // Hide the blinking cursor
+        });
+    </script>
+</body>
+</html>
